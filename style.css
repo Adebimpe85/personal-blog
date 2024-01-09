@@ -163,7 +163,7 @@ input[type="checkbox"]:checked + .toggle-label::after {
 .text_content {
   flex: 1; /* Equal width for both divs */
   display: grid;
-  height: 40vh;
+  height: 50vh;
 }
 
 .image {
@@ -201,6 +201,10 @@ input[type="checkbox"]:checked + .toggle-label::after {
 body.dark-mode {
   background-color: #333;
   color: #fff;
+}
+
+body.dark-mode .text_content{
+  color: grey !important;
 }
 
 @keyframes slidin {
