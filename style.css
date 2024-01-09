@@ -203,7 +203,7 @@ body.dark-mode {
   color: #fff;
 }
 
-body.dark-mode .text_content{
+body.dark-mode .text_content {
   color: grey !important;
 }
 
@@ -219,5 +219,168 @@ body.dark-mode .text_content{
   100% {
     left: 0px;
     top: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+  /* header */
+  header {
+    background-color: aquamarine;
+    position: fixed;
+    overflow: hidden;
+    top: 0; /* Ensures the header stays at the top */
+    z-index: 1000;
+    width: 100%;
+    border-bottom: 2px solid #000;
+  }
+  .heade {
+    display: grid;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+    margin: 0% auto;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .heade h1 {
+    padding-left: 27%;
+  }
+  .head {
+    display: flex;
+    gap: 10%;
+    margin-top: 2%;
+  }
+  .toggle-btn {
+    margin: 5% 0 5% 50%;
+  }
+
+  /* section2 */
+  #home {
+    background-image: url(https://plus.unsplash.com/premium_photo-1676654935673-fdb42044b7ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60);
+    border-bottom: 2px solid aquamarine;
+    background-size: cover;
+    margin-bottom: 2%;
+    height: 100vh;
+  }
+  .part1 {
+    text-align: center;
+    padding-top: 50%;
+  }
+  .part1 h1 {
+    font: 0.6em sans-serif;
+    font-weight: bolder;
+  }
+  .part1 img {
+    width: 60%;
+  }
+  .auto-input {
+    color: aquamarine;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .img {
+    text-align: center;
+    align-items: center;
+    animation-name: slidin;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    position: relative;
+  }
+  .img img {
+    width: 20%;
+  }
+
+  /* section3 */
+  .abo {
+    width: 100%;
+    padding: 5% 3%;
+    font-size: medium;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: rgb(136, 134, 134);
+  }
+
+  /* section3 */
+  #blog {
+    background-color: aquamarine;
+    width: 100%;
+  }
+
+  #blog h1 {
+    /* font-size: larger; */
+    padding-top: 5%;
+    text-align: center;
+  }
+
+  .blog_container {
+    max-width: 100%;
+    margin: 0% auto;
+    align-items: start;
+    padding: 3%;
+  }
+  .myblogs_container {
+    display: grid;
+    gap: 40px;
+  }
+  .blog {
+    background-color: white;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .text_content {
+    flex: 1; /* Equal width for both divs */
+    display: grid;
+    height: 40vh;
+  }
+
+  .image {
+    flex: 1; /* Equal width for both divs */
+  }
+
+  .image img {
+    width: 100%; /* Make the image occupy its space */
+    height: 50vh; /* Maintain aspect ratio */
+  }
+
+  .blog_design {
+    position: absolute;
+    left: 80%;
+    top: 220%;
+    font: bold 12rem Sans-Serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /* background: #f1786c; */
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    padding: 35px 10px;
+    line-height: 24px;
+    writing-mode: vertical-rl;
+    display: none;
+  }
+
+  /* section5 */
+  .conne {
+    display: grid;
+    gap: 20%;
+    padding: 10% 0 10% 15%;
+    align-items: center;
+  }
+  .social-links h1{
+     font: 1.5em sans-serif;
+  }
+  .social-links img{
+    width: 20%;
+    padding: 3% 3%;
   }
 }
